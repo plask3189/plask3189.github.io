@@ -1,51 +1,85 @@
-<!DOCTYPE htmI>
-<!-- This is index.html v1 -->
-<html>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kate Plas</title>
-<meta name="description" content="CS PhD Student at UC">
-<link rel="manifest" href="/assets/favicon/site.webmanifest">
-<link rel="stylesheet" href="/assets/css/main.min.css">
-<link rel="stylesheet" href="/assets/css/vendors.min.css">
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script src="/assets/js/vendors.min.js"></script>
-<style>undefined</style>
-<script src="/assets/js/app.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Kate Plas</title>
+  <meta name="description" content="CS PhD Student at UC">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <!--- to load font stuff quickly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <!--- btw rel means relation. -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--- get the font from google -->
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/main.min.css">
-  <link rel="stylesheet" href="/assets/css/vendors.min.css">
 
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/assets/js/vendors.min.js"></script><style>undefined</style>
-  <script src="/assets/js/app.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: 'Abel', sans-serif;
+      background-color: #191414;
+      color: #1DB954;
+      margin: 0;
+      padding: 0;
+    }
 
+    .container { /* for the top center strip with text */
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #1c1c1c; /* Slightly lighter dark background for the container */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      color: #1DB954;
+      margin-bottom: 20px;
+    }
+
+    p { /* features of the page stuff */
+      font-size: 1.2em;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1DB954; /* green for links */
+      text-decoration: none;
+    }
+
+    a:hover { /* when hovering over the link, underline it*/
+      text-decoration: underline;
+    }
+
+    img {
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
-<body style = "background-color:green;">
-<h1>Hi, I'm Kate Plas.</h1>
-<p>CS PhD Student at UC/p>
-<p><a href="https://github.com/plask3189">My gitHub repos</a></p>
 
-<img src = "me.jpg" alt = "Me 2024"
-  width = "265"
-  height = "398" />
-
+<body>
+  <div class="container">
+    <h1>Kate Plas</h1>
+    <p>User Interface Design CS6067</p>
+    <p>CS PhD Student at UC</p>
+    <p><a href="https://github.com/plask3189">My GitHub Repos</a></p>
+    <p><a href="https://www.linkedin.com/in/kate-plas-b2b391192/">LinkedIn</a></p>
+  </div>
+  <div class="container">
+    <h1>Project 1</h1>
+  </div>
+  <div class="container">
+    <h1>Project 2</h1>
+  </div>
+  <div class="container">
+    <h1>Project 3</h1>
+  </div>
 </body>
 </html>
