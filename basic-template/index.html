@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My UI</title>
+    
+    <!-- The following line references an external css file -->
+    <!-- It defines style rules for your page, and elements in your page -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+
+
+<body>
+    <header class="title-area">
+      <h1> Musical Instrument Practice Tracker </h1>
+      <h4> User: Kate Plas</h4>
+    </header>
+    <div class = "grid-container">
+        <style> h3 {text-align: center;}</style>
+        <div class = "left sub-area" id = today>
+            <h3> Add an Entry for Today</h3>
+            <p>Entry Time: 14:12 on Friday, August 30, 2024</p>
+            <div class= "give-me-space">
+            <button class= "give-me-space" type="button" >Upload Image</button>
+            <img src="harp_and_lily.png"  style="width:200px; height: 240px;" id="imageUpload"/>
+            </div>
+            <div> 
+                <label for="username">Journal Entry:</label>
+                <input type="text" id="journalEntryText" class = "input-box">
+            </div>
+            <div>
+                <svg width="200" height="2">
+                    <line x1="0" y1="0" x2="400" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            <p class="box-for-text"> Inspirational text: I at least try to play my harp. Be patient and you can do this. </p>
+            <div>
+                <svg width="200" height="2">
+                    <line x1="0" y1="0" x2="400" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="dropdown-container">
+                <p> How many hours of sleep did you get last night? </p>
+                <select id="sleepHours">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            <div>
+    <!-----------------------------------------FEELING-------------------------------------->
+    <label>How do you feel today? Check all that apply: </label>
+    <div class="checkbox-group">
+        <label for="option1"> Okay</label>
+        <input type="checkbox" id="option1">
+        <div id="option1_id"></div>
+    
+        <label for="option2"> Alright</label>
+        <input type="checkbox" id="option2">
+        <div id="option2_id"></div>
+    
+        <label for="option3"> Fine</label>
+        <input type="checkbox" id="option3">
+        <div id="option3_id"></div>
+    </div>
+    
+
+    <button class= "give-me-space"  type="button" id="todaySubmit"> Submit Today's Entries </button>
+
+    <!---------------------------------------------------------------------->
+    </div> 
+    </div> <!-- End of add entry for today-->
+        <!-----------------------------------Progress Page------------->
+        <div class ="right sub-area" >
+            <h3> Your Progress History</h3>
+            <div class="sleep-Av"> Sleep Average: </div> 
+            <div class="feeling"> Feelings: </div> 
+            <div id="entryHistory"></div>
+            <div id="todayEntry"></div>
+
+        </div>
+        
+        <!--------------------------------------------------------->
+    </div>
+
+
+
+    <!-- Load external JS files -->
+    <!-- This is where you will do most of the 'work' for your applications -->
+    <script src="js/main.js"></script>
+</body>
+</html>
